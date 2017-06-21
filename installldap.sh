@@ -19,7 +19,7 @@
   166  vim /etc/pam.d/sshd 
   167  chkconfig  nslcd on
   168  reboot 
- ldapsearch  -x -D cn=config -w "=omj0VP8q" -b cn=config 查看cn=config下面的设置
+ ldapsearch  -x -D cn=config -W  -b cn=config 查看cn=config下面的设置
 To kill off slapd(8) safely, you should give a command like this
 kill -INT `cat /usr/local/var/slapd.pid`
 

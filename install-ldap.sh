@@ -11,7 +11,7 @@ chkconfig  slapd on
 
 #Set OpenLDAP admin password.
 
-#passwd:=omj0VP8q
+#passwd:
 #changSSHA:{SSHA}0NZyQiH5wWdlPTEBHgw/Y7D4Jo6Y6iZV
 
 vi chrootpw.ldif
@@ -133,7 +133,7 @@ to get the use and group information . But I find the password information is \ 
 [root@dlp ~]# ldapdelete -x -W -D 'cn=Manager,dc=server,dc=world' "uid=cent,ou=People,dc=server,dc=world" 
 Enter LDAP Password:
 [root@dlp ~]# ldapdelete -x -W -D 'cn=Manager,dc=server,dc=world' "cn=cent,ou=Group,dc=server,dc=world" 
-Enter LDAP Password:=omj0VP8q
+Enter LDAP Password:
 
 
 #Configure LDAP Client in order to share users' accounts
